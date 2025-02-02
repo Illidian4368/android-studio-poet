@@ -28,4 +28,5 @@ class ProjectConfig {
     val androidModuleConfigs: List<AndroidModuleConfig> by lazy { moduleConfigs.filterIsInstance<AndroidModuleConfig>() }
 
     var jsonText: String = ""
+    var buildToolsVersion: String? = buildSystemConfig?.buildToolsVersion
 }

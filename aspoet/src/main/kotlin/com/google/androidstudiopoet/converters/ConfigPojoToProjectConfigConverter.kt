@@ -42,6 +42,7 @@ class ConfigPojoToProjectConfigConverter(private val configPojoToModuleConfigCon
             root = configPojo.root
             this.buildSystemConfig = buildSystemConfig
             moduleConfigs = pureModulesConfigs + androidModulesConfigs
+            buildToolsVersion = buildSystemConfig.buildToolsVersion
         }
     }
 }

@@ -29,4 +29,6 @@ class AndroidModuleConfig : ModuleConfig() {
     var dataBindingConfig: DataBindingConfig? = null
     var composeConfig: ComposeConfig? = null
     var viewBinding: Boolean = false
+
+    var buildToolsVersion: String = androidBuildConfig.buildToolsVersion
 }

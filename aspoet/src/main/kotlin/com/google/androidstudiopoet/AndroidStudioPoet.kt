@@ -74,7 +74,8 @@ class AndroidStudioPoet(private val modulesGenerator: SourceModuleGenerator, pri
                 "listenerCount": 0
               },
               "buildTypes": 2,
-              "generateTests": true
+              "generateTests": true,
+              "buildToolsVersion": "30.0.3"
             }
             """.trimIndent()
     }

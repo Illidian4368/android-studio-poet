@@ -55,6 +55,7 @@ class ConfigPojoToAndroidModuleConfigConverter {
             dataBindingConfig = config.dataBindingConfig
             composeConfig = config.composeConfig
             viewBinding = config.viewBinding
+            buildToolsVersion = config.buildToolsVersion ?: "30.0.3"
         }
     }
 }

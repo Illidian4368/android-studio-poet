@@ -16,4 +16,9 @@ limitations under the License.
 
 package com.google.androidstudiopoet.input
 
-data class AndroidBuildConfig(val minSdkVersion: Int = 24, val targetSdkVersion: Int = 30, val compileSdkVersion: Int = 30)
+data class AndroidBuildConfig(
+    val minSdkVersion: Int = 24,
+    val targetSdkVersion: Int = 30,
+    val compileSdkVersion: Int = 30,
+    val buildToolsVersion: String = "30.0.3"
+)
