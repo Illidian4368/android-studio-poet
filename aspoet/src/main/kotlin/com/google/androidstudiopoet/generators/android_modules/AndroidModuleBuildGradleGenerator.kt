@@ -47,6 +47,7 @@ class AndroidModuleBuildGradleGenerator(val fileWriter: FileWriter) {
     private fun androidClosure(blueprint: AndroidBuildGradleBlueprint): Closure {
         val statements = listOfNotNull(
                 Expression("compileSdkVersion", "${blueprint.compileSdkVersion}"),
+                Expression("buildToolsVersion", "\"${blueprint.buildToolsVersion}\""),
                 defaultConfigClosure(blueprint),
                 buildTypesClosure(blueprint),
                 kotlinOptionsClosure(blueprint),
@@ -159,4 +160,3 @@ class AndroidModuleBuildGradleGenerator(val fileWriter: FileWriter) {
                         task.body?.map { StringStatement(it) } ?: listOf())
             }.toSet()
 }
-
